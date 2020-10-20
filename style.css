@@ -1,0 +1,231 @@
+@keyframes opacityzero{
+	0%{
+		opacity: 1
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+@keyframes moving {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes moving2 {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+
+@-webkit-keyframes rotate-90-top-ccw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+@-webkit-keyframes rotate-90-right-cw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@-webkit-keyframes rotate-90-br-ccw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+}
+html{
+	cursor: url(cursor.png), auto;
+}
+
+.open{
+	width:100%;
+	height:50%;
+	z-index: 100;
+	position: absolute;
+	
+	transition-property: all;
+	transition-duration: 2s;
+
+	animation: opacityzero;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+
+	
+}
+
+.open:hover {
+	
+	animation-play-state: running
+
+}
+
+
+
+.img_container{
+	width:100%;
+	height:100%;
+	background-color: black;
+	z-index: 1;
+	
+}
+
+.img{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	
+}
+.img1{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+}
+.img2{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	-webkit-animation: moving 2s ease-in-out infinite alternate both;
+	        animation: moving 2s ease-in-out infinite alternate both
+}
+.img3{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+	-webkit-animation: moving2 2s ease-in-out infinite alternate both;
+	        animation: moving2 2s ease-in-out infinite alternate both;
+}
+.img4{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	-webkit-animation: rotate-90-right-cw 3s ease-in-out infinite alternate both;
+	        animation: rotate-90-right-cw 3s ease-in-out infinite alternate both;
+}
+.img5{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+		-webkit-animation: moving 2s ease-in-out infinite alternate both;
+	        animation: moving 2s ease-in-out infinite alternate both
+}
+.img6{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+	-webkit-animation: moving2 2s ease-in-out infinite alternate both;
+	        animation: moving2 2s ease-in-out infinite alternate both;
+}
+.img7{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+	
+}
+.img8{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	-webkit-animation: rotate-90-top-ccw 4s ease-in-out infinite alternate both;
+	        animation: rotate-90-top-ccw 4s ease-in-out infinite alternate both;
+}
+}
+.img9{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+}
+.img10{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	-webkit-animation: rotate-90-right-cw 3s ease-in-out infinite alternate both;
+	        animation: rotate-90-right-cw 3s ease-in-out infinite alternate both;
+}
+}
+.img11{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+}
+.img12{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	-webkit-animation: rotate-90-br-ccw 5s ease-in-out infinite alternate both;
+	        animation: rotate-90-br-ccw 5s ease-in-out infinite alternate both;
+}
+
+.img13{
+	position:absolute;
+	top: -120px;
+	width:100%;
+	height:60%;
+
+	-webkit-animation: rotate-90-top-ccw 4s ease-in-out infinite alternate both;
+	        animation: rotate-90-top-ccw 4s ease-in-out infinite alternate both;
+}
+
+
